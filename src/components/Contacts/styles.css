@@ -1,0 +1,65 @@
+#container{
+    width: 400px;
+    padding: 20px;
+    background-color: rgb(82, 17, 17);
+    
+}
+
+input{
+    width: 100%;
+    box-sizing: border-box;
+    padding: 5px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+
+}
+
+body{
+    background-color: rgb(34, 30, 30);
+   
+}
+
+ul,li{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+.list{
+    margin: 16px 0;
+
+}
+
+.list>li{
+    background-color: rgb(54, 44, 44);
+    padding: 5px;
+    margin-bottom: 3px;
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.btn{
+    
+    display: flex;
+    justify-content: flex-end;
+    padding: 5px;
+   
+
+}
+
+.btn>button{
+    padding: 5px;
+    background-color: rgb(41, 9, 117);
+    
+}
+
+.baslik{
+    text-align: center;
+}
+
+.total{
+    font-size: medium;
+    font-weight: 900;
+    
+}
