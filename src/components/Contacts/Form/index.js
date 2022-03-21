@@ -19,10 +19,17 @@ function Form({ addContact, contacts }) {
 
         e.preventDefault();
 
-        if (form.fullname === "" || form.phone_number === "") {
+        if (form.fullname !== "" && form.phone_number === "") {
+            form.phone_number = "Numara bulunamadı."
+
+        }
+        else if (form.fullname === "") {
 
             return false;
+            
+           
         }
+
 
         addContact([...contacts, form]);
     };
@@ -38,10 +45,11 @@ function Form({ addContact, contacts }) {
 
             <div>
                 <input name="phone_number"
+                    pattern="[0-9]*"
                     placeholder='Phone Number'
                     value={form.phone_number}
                     onChange={onChangeInput}>
-                    </input>
+                </input>
             </div>
 
 

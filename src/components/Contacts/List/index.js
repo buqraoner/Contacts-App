@@ -4,7 +4,7 @@ import React, { useState } from 'react'
 function List({ contacts }) {
   const [filterText, setFilterText] = useState("");
   const filtered = contacts.filter((item) => {
-    return Object.keys(item).some((key) => 
+    return Object.keys(item).some((key) =>
       item[key]
         .toString()
         .toLowerCase()
@@ -12,7 +12,7 @@ function List({ contacts }) {
     );
   });
 
-  console.log("Filtered",filtered);
+  console.log("Filtered", filtered);
 
   return (
     <div>
@@ -24,7 +24,7 @@ function List({ contacts }) {
 
 
       <ul className='list'>
-        {contacts.map((contact, i) => (
+        {filtered.map((contact, i) => (
           <li key={i}>
             <span>{contact.fullname}</span>
             <span>{contact.phone_number}</span>
