@@ -54,7 +54,7 @@ function Form({ addContact, contacts }) {
 
 
             <div className='btn'>
-                <button >Add</button>
+                <button  >Add</button>
             </div>
         </form>
     )
